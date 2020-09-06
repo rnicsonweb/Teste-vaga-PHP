@@ -2,7 +2,7 @@
 
 ## Instalação
 
-<li><b>Execute:</b> gitclone https://github.com/rnicsonweb/boxdelivery</li>
+<li><b>Execute:</b> git clone https://github.com/rnicsonweb/boxdelivery</li>
 <li><b>Execute:</b> composer install</li>
 <li>Crie um banco de dados mysql e altere no arquivo .env</li>
 <li><b>Execute:</b> php artisan migrate:fresh --seed</li>
@@ -19,11 +19,11 @@ Senha:12345678
 
 Foi Criado EndPoint da Seguinte Forma:
 
-Cadastrar usuário:<b>Method:</b> Post <b>Url:</b> api/register("Enviar name, email e password como parametro")
-Efetuar login para poder consumir o restante da API:<b>Method:</b> Post <b>Url:</b> api/auth/login("Enviar email e password como parametro")
-Listar os filmes cadastrados no banco:<b>Method:</b> Get <b>Url:</b>  api/filmes
-Listar os filmes que o usuário salvou como favorito:<b>Method:</b> Get <b>Url:</b> api/favoritos/{user_id}
-Salvar um filme como favorito:<b>Method:</b> Post <b>Url:</b>  api/favoritos("Enviar film_id e user_id como parametro")
+Cadastrar usuário:<b>Method:</b> Post <b>Url:</b> api/register("Enviar name, email e password como parametro")<br><br>
+Efetuar login para poder consumir o restante da API:<b>Method:</b> Post <b>Url:</b> api/auth/login("Enviar email e password como parametro")<br><br>
+Listar os filmes cadastrados no banco:<b>Method:</b> Get <b>Url:</b>  api/filmes<br><br>
+Listar os filmes que o usuário salvou como favorito:<b>Method:</b> Get <b>Url:</b> api/favoritos/{user_id}<br><br>
+Salvar um filme como favorito:<b>Method:</b> Post <b>Url:</b>  api/favoritos("Enviar film_id e user_id como parametro")<br><br>
 Remover um filme da lista de favoritos do usuário:<b>Method:</b> Delete <b>Url:</b> api/favoritos/{id}
 
 ##Imagens do Sistema
